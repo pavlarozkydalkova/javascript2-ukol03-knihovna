@@ -1,3 +1,6 @@
+//import { read } from "fs";
+import Book from './book';
+
 /*
   Třída pro knihovnu.
 
@@ -59,5 +62,22 @@ export default class Library {
       }
     }
   }
+
+  //dočti aktuálně čtenou knihu
+  finishCurrentBook(){
+    if (this.currentBook !== null) {
+    this.currentBook.read();
+    this.lastBook = this.currentBook;
+    this.currentBook = null;
+    }
+  }
+   //vypiš všechny nepřečtené knihy
+   listUnreadBooks() {
+     let unreadList = this.bookList.filter(item => !item.isRead); 
+    console.table(unreadList);
+    
+    }
+
+
 
 }

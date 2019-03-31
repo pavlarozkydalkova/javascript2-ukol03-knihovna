@@ -29,3 +29,16 @@ knihovna.startReadingNextBook();
 
 /* vypíšeme všechny knihy v knihovně */
 knihovna.listAllBooks();
+
+/* dočte aktuální knihu*/
+knihovna.finishCurrentBook();
+
+/*vypíše nepřečtené knihy*/
+knihovna.listUnreadBooks();
+
+knihovna.startReadingNextBook();
+knihovna.finishCurrentBook();
+knihovna.startReadingNextBook();
+knihovna.finishCurrentBook();
+knihovna.listAllBooks();
+knihovna.listUnreadBooks();
